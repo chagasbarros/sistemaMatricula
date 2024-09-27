@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My ApplicationMatricula</string>
+    <string-array name="Turmas">
+        <item>Turma A</item>
+        <item>Turma B</item>
+        <item>Turma C</item>
+    </string-array>
+</resources>

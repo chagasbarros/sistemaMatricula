@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Matrícula"
+        android:textSize="32dp"
+        android:textColor="@color/android"
+        android:layout_gravity="center"
+         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <EditText
+            android:id="@+id/EditNomeConsulta"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="consultar de aluno"
+            android:padding="12dp" />
+        <Button
+            android:id="@+id/buttonConsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consultar"
+            android:backgroundTint="@color/android"
+            android:padding="12dp"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textSaidaConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Aluno"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:textColor="@color/android"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/textNomeMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nome completo"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/textNota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Nota 1"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/textNota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Nota 2"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/textNota3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Nota 3"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/textNota4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Nota 4"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:text="Escolha a turma"
+        android:textColor="@color/android"
+        android:paddingLeft="12dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTurma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:layout_marginBottom="32dp"
+        android:entries="@array/Turmas"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMatricular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Matricular"
+        android:backgroundTint="@color/android"
+        android:padding="12dp"
+        />
+
+    <TextView
+        android:id="@+id/textMatricula"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        android:paddingLeft="12dp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
